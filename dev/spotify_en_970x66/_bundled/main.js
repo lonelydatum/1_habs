@@ -62,7 +62,7 @@ function start_bb() {
 	tl.from(".t1c", { duration: .5, opacity: 0 }, "+=.5");
 	tl.to(".t1", { duration: .3, opacity: 0 }, "+=1");
 
-	tl.from(".t2a", { duration: .3, opacity: 0 });
+	tl.from(".t2a", { duration: .3, opacity: 0 }, "+=.3");
 	tl.from(".t2b", { duration: .3, opacity: 0 });
 	tl.from(".cta", { duration: .3, opacity: 0 }, "+=.3");
 }
