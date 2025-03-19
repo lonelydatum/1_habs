@@ -1,0 +1,27 @@
+
+
+#banner{
+ width: 160px;
+ height: 600px;
+ 
+}
+
+#olg{
+	width: 87px;
+	height: 49px;
+	@include pos(0, 554);
+}
+
+
+#legalBtn{	
+	@include pos(95, 4);	
+	width: 72px;
+	// opacity: 1;
+}
+
+
+
+
+.end_smart{
+	@include pos-scale(0, 0, .5);
+}
