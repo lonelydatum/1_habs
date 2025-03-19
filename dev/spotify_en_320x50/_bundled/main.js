@@ -48,23 +48,23 @@ function start() {
 	// tl.from(".t1a", {duration:.5, x:`-=${w}`}, "start")
 	// tl.to(".t1a", {duration:.3, opacity:0}, "+=.5")
 
-	tl.from(".t2a", { duration: .3, opacity: 0 });
-	tl.from(".cta", { duration: .3, opacity: 0 }, "+=.3");
+	tl.from(".t2a", { duration: .3, opacity: 0 }, .3);
+	// tl.from(".cta", {duration:.3, opacity:0}, "+=.3")
 	tl.from([".t2b"], { duration: .3, opacity: 0 }, "+=.3");
 }
 
 function start_bb() {
 	var tl = init();
 	tl.add("start");
-	tl.from(".hero", { duration: .5, x: "-=" + w }, "start");
-	tl.from(".t1a", { duration: .5, x: "-=" + w }, "start");
-	tl.from(".t1b", { duration: .5, opacity: 0 }, "+=2");
-	tl.from(".t1c", { duration: .5, opacity: 0 }, "+=.5");
-	tl.to(".t1", { duration: .3, opacity: 0 }, "+=1");
+	// tl.from(".hero", {duration:.5, x:`-=${w}`}, "start")
+	tl.from(".t1", { duration: .5, x: "-=" + w }, "start");
+	// tl.from(".t1b", {duration:.5, opacity:0}, "+=2")
+	// tl.from(".t1c", {duration:.5, opacity:0}, "+=.5")
+	tl.to(".t1", { duration: .3, opacity: 0 }, "+=5");
 
 	tl.from(".t2a", { duration: .3, opacity: 0 }, "+=.3");
 	tl.from(".t2b", { duration: .3, opacity: 0 });
-	tl.from(".cta", { duration: .3, opacity: 0 }, "+=.3");
+	// tl.from(".cta", {duration:.3, opacity:0}, "+=.3")
 }
 
 exports.size = size;
