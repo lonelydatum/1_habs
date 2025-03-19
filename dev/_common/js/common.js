@@ -58,7 +58,7 @@ function start_bb(){
 	const tl = init()		
 	tl.add("start")
 	// tl.from(".hero", {duration:.5, x:`-=${w}`}, "start")
-	tl.from(".t1", {duration:.5, x:`-=${w}`}, "start")
+	tl.from(".t1", {duration:.5, opacity:0}, "start")
 	// tl.from(".t1b", {duration:.5, opacity:0}, "+=2")
 	// tl.from(".t1c", {duration:.5, opacity:0}, "+=.5")
 	tl.to(".t1", {duration:.3, opacity:0}, "+=5")
